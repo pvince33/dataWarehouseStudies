@@ -117,7 +117,7 @@ CREATE TABLE CEDH_Decklists
 	 qty		INT,
 	 card_name	NVARCHAR(60) CONSTRAINT LegalCardName NOT NULL,
 	 legal_format		NVARCHAR(15)	
-	 creator_name FOREIGN KEY 
+-- , creator_name FOREIGN KEY REFERENCES CEDH_Deck_Creator_Info(CreatorName)
 	);
 --
 CREATE TABLE Paradox_Engine_Price 
